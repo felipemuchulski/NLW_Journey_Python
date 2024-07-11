@@ -12,4 +12,5 @@
   2. Virtual Venv
   3. SQL Lite
   4. Pytest
+  5. Dbeaver 
  
