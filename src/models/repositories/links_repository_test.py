@@ -13,7 +13,7 @@ def test_registry_link():
     links_repository = LinksRepository(conn)
 
     link_info = {
-        "id_links": link_id,
+        "id": link_id,
         "trip_id": trip_id,
         "link": "youtube.com",
         "title": "Youtube"

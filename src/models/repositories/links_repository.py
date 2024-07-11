@@ -10,11 +10,11 @@ class LinksRepository:
         cursor.execute(
             '''
                 INSERT INTO links (
-                 id_links, trip_id, link, title)
+                 id, trip_id, link, title)
                 VALUES(?, ?, ?, ?)
 
             ''', (
-                link_infos["id_links"],
+                link_infos["id"],
                 link_infos["trip_id"],
                 link_infos["link"],
                 link_infos['title']

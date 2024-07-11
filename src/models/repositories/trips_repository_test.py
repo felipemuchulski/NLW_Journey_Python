@@ -14,7 +14,7 @@ def test_create_trip():
     trips_repository = TripsRepository(conn);
 
     trips_infos = {
-        "id_trips": trip_id,
+        "id": trip_id,
         "destination": "Sao Paulo",
         "start_date": datetime.strptime("02-01-2024", "%d-%m-%Y"),
         "end_date": datetime.strptime("02-01-2024", "%d-%m-%Y") + timedelta(days=5),

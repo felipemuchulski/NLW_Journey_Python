@@ -7,6 +7,7 @@ class TripCreator:
         self.__emails_repository = emails_repository
 
     def create(self, body) -> Dict:
+     try:
         emails = body.get("emails_to_invite")
 
         trip_id = str(uuid.uuid4())
@@ -24,5 +25,13 @@ class TripCreator:
 
         return {
             "body": {"id": trip_id},
-            "status_code": 201
+            "status_code": 201 ## status significa criado
         }
+     except Exception  as exception:
+         return {
+            "body": {"error": "Bad request", "message": str(exception)},
+            "status_code" : 400
+            }
+        
+
+

@@ -10,11 +10,11 @@ class EmailsToInviteRepository:
         cursor.execute(
             '''
                 INSERT INTO emails_to_invite (
-                 id_invite, trip_id, email)
+                 id, trip_id, email)
                 VALUES(?, ?, ?)
 
             ''', (
-                emails_infos["id_invite"],
+                emails_infos["id"],
                 emails_infos["trip_id"],
                 emails_infos["email"]
             )
