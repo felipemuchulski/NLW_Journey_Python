@@ -7,9 +7,9 @@
   5. Baixe o instalador clicando no botão Download Python (em amarelo) e execute-o.
   6. Siga as instruções do instalador para concluir a instalação do Python.
 
-> Ferramentas e Frameworks:
-   Flask
-   Virtual Venv
-   SQL Lite
-   Pytest
+> Ferramentas e Frameworks: <br>
+  1. Flask
+  2. Virtual Venv
+  3. SQL Lite
+  4. Pytest
  
