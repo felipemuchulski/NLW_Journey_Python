@@ -8,8 +8,8 @@
   6. Siga as instruções do instalador para concluir a instalação do Python.
 
 > Ferramentas e Frameworks:
- Flask
- Virtual Venv
- SQL Lite
- Pytest
+   Flask
+   Virtual Venv
+   SQL Lite
+   Pytest
  
