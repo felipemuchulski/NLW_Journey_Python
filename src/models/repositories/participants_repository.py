@@ -41,3 +41,4 @@ class ParticipantsRepository:
                 id = ?
             ''', (participant_id,)
         )
+        self.__conn__.commit()
