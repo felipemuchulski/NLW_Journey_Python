@@ -22,9 +22,9 @@ def test_registry_participant():
 
     participants_repository.registry_participant(participants_info)
 
-@pytest.mark.skip(reason='interação com o banco')
+# @pytest.mark.skip(reason='interação com o banco')
 def teste_update_participante_status():
     conn = db_connection_handler.get_connection();
     participants_repository = ParticipantsRepository(conn)
     
-    participants_repository.update_participante_status();
+    participants_repository.update_participante_status(parti_id);
