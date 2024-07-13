@@ -5,7 +5,7 @@ class ActiviesRepository:
     def __init__(self, conn: Connection) -> None:
         self.__conn = conn
     
-    def registry_activivty(self, acitivity_infos: Dict) -> None:
+    def registry_activity(self, acitivity_infos: Dict) -> None:
         cursor = self.__conn.cursor();
         cursor.execute(
             '''
@@ -23,7 +23,7 @@ class ActiviesRepository:
         self.__conn.commit();
 
     ## Buscar exemplos no banco de dados
-    def find_activies_trip(self, trip_id: str) -> list[Tuple]:
+    def find_activities_from_trip(self, trip_id: str) -> list[Tuple]:
         cursor = self.__conn.cursor();
         cursor.execute(
         ''' SELECT * FROM activities WHERE trip_id = ?''', (trip_id,)
