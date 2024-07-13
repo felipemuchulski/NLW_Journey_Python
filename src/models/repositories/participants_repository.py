@@ -23,7 +23,7 @@ class ParticipantsRepository:
     def find_participants_from_trip(self, trip_id: str) -> List[Tuple]:
         cursor = self.__conn__.cursor()
         cursor.execute(
-            '''SELECT p.id, p.name, p.is_confirme, e.email 
+            '''SELECT p.id, p.name, p.is_confirmed, e.email 
             FROM participants as p
             JOIN emails_to_invite as e ON e.id = p.emails_to_invite_id
             WHERE p.trip_id = ?''', (trip_id,)
@@ -31,7 +31,7 @@ class ParticipantsRepository:
         participants = cursor.fetchall()
         return participants
 
-    def update_participante_status(self, participant_id: str) -> None:
+    def update_participant_status(self, participant_id: str) -> None:
         cursor = self.__conn__.cursor();
         cursor.execute(
             '''
